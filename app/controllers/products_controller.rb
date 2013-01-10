@@ -8,7 +8,7 @@ class ProductsController < ApplicationController
   def index
    #@products=Product.all(:include => :publisher).paginate(:page=>params[:page])
     @products=Product.paginate(:page=>params[:page],:per_page => params[:per_page]).all(:include => :publisher)
-    @ids=params["ids"].split(",")
+    #@ids=params["ids"].split(",")
       log = Logger.new(STDOUT)
       log.error(@ids)
     @say= Product.say

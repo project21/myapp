@@ -26,7 +26,7 @@ gem 'rabl'
 gem 'yajl-ruby'
 gem 'faker'
 gem 'thin'
-
+gem 'rvm-capistrano'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -37,7 +37,7 @@ gem 'thin'
 # gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano'
 
 # To use debugger
 # gem 'debugger'
