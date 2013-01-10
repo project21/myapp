@@ -27,7 +27,7 @@ gem 'yajl-ruby'
 gem 'faker'
 gem 'thin'
 gem 'rvm-capistrano'
-gem 'mysql2','0.2.7'
+#gem 'mysql2','0.2.7'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
