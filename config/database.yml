@@ -24,5 +24,5 @@ production:
   database: myapp_db
   username: ubuntu
   pool: 5
-  socket: /tmp/mysql.sock
+  socket: /var/run/mysqld/mysqld.sock
 
