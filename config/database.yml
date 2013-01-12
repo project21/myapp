@@ -22,7 +22,8 @@ production:
   adapter: mysql2
   encoding: utf8
   database: myapp_db
-  username: ubuntu
+  username: root
+  password: ggreat19
   pool: 5
   socket: /var/run/mysqld/mysqld.sock
 
