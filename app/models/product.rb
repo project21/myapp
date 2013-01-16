@@ -1,5 +1,5 @@
 
-	require "Module1/say"
+	#require "Module1/say"
   
 class Product < ActiveRecord::Base
 	include ::Service
