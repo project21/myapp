@@ -11,7 +11,7 @@ class ProductsController < ApplicationController
     #@ids=params["ids"].split(",")
       log = Logger.new(STDOUT)
       log.error(@ids)
-    @say= Product.say
+    #@say= Product.say
      log.debug("after hello")
     respond_to do |format|
       format.html # index.html.erb
