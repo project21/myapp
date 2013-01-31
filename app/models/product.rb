@@ -1,10 +1,10 @@
 
-	#require "Module1/say"
+	require "Module1/say"
   
 class Product < ActiveRecord::Base
 	include ::Service
 	include Utility::Car
-	#include Module1::Say
+	include Module1::Say
   attr_accessible :details, :name,:publisher_id,:product_name
   validates_presence_of :product_name
   belongs_to :user
