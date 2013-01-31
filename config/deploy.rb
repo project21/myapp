@@ -9,7 +9,7 @@ ssh_options[:keys]=["/Users/david.mbura/Downloads/myapp_davidmbura.pem"]
 set :use_sudo, true
  set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
-set :deploy_to, "/home/web_applications"
+set :deploy_to, "/home/ubuntu/web_applications"
 role :web, "107.22.72.217"                          # Your HTTP server, Apache/etc
 role :app, "107.22.72.217"                          # This may be the same as your `Web` server
 role :db,  "107.22.72.217", :primary => true # This is where Rails migrations will run
