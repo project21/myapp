@@ -6,7 +6,7 @@ set :branch, "master"
 set :user, "ubuntu" 
 ssh_options[:forward_agent] = true
 ssh_options[:keys]=["/Users/david.mbura/Downloads/myapp_davidmbura.pem"]
-set :use_sudo, true
+set :use_sudo, false
  set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 set :deploy_to, "/home/ubuntu/web_applications"
