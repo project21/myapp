@@ -11,7 +11,7 @@ class ProductsController < ApplicationController
     #@ids=params["ids"].split(",")
       log = Logger.new(STDOUT)
       log.error(@ids)
-    #@say= Product.say
+    @say= Product.say
      log.debug("after hello")
     respond_to do |format|
       format.html # index.html.erb
@@ -25,10 +25,10 @@ class ProductsController < ApplicationController
   def show
     @product = Product.find(params[:id])
 
-    respond_to do |format|
-      format.html  show.html.erb
-      format.json { render json: @product }
-    end
+    #respond_to do |format|
+      #format.html  show.html.erb
+      #format.json { render json: @product }
+   # end
   end
 
 
@@ -36,11 +36,12 @@ class ProductsController < ApplicationController
   # GET /products/new.json
   def new
     @product = Product.new
-
+=begin
     respond_to do |format|
-      format.html # new.html.erb
+      format.html  new.html.erb
       format.json { render json: @product }
     end
+=end   
   end
 
   # GET /products/1/edit
