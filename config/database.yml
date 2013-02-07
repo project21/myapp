@@ -21,7 +21,7 @@ test:
 production:
   adapter: mysql2
   encoding: utf8
-  database: test
+  database: myapp_db
   username: root
   password: ggreat19
   pool: 5
