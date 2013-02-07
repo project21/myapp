@@ -12,7 +12,7 @@
 
 <% @products.each do |product| %>
      <tr><td><%= product.product_name %></td>
-       <tr><td><%= product.publisher.email %></td>
+       <tr><td></td>
     <td><%= product.details %></td>
     <td><%= link_to 'Show', product %></td>
     <td><%= link_to 'Edit', edit_product_path(product) %></td>
